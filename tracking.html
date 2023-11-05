@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&family=Signika:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/flipdown.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/flipdown.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="container">
+
+            <div class="upper_nav">
+                <div id="logo">Nutra</div>
+                <div id="search"><img src="icons/Search.svg" alt="search_icon"></div>
+            </div>
+    
+            <div class="lower_nav">
+                <div class="menu">
+                <a href="#" id="active"><img src="icons/Home.svg" alt="Home"></a>
+                <a href="#"><img src="icons/dashboard.svg" alt="Dashboard"></a>
+                <a href="#"><img src="icons/Heart.svg" alt="Heart"></a>
+                <a href="#"><img src="icons/Profile_outline.svg" alt="Profile"></a>
+                </div>
+            </div>
+    
+            <div class="hero">
+                <div class="left">
+                    <div class="one">#1 Nutrition tracking app</div>
+                    <div class="two"><span id="reach">Reach</span><br>your goals</div>
+                    <div class="three">Build healthy habits with the all-in-one<br>food, exercise, and calorie tracker.</div>
+                    <a href="#"><button id="explore">Explore Now <img src="icons/explore.svg" alt=""></button></a>
+                </div>
+                
+                <div class="right">
+                    <img src="images/girl_photo.png" alt="Girl_photo">
+                </div>
+    
+            </div>
+
+        </div>
+
+        <div class="timer">
+
+            <div class="offer">Special Offer</div>
+            <div class="offerEnds">Ends in</div>
+
+            <div class="timer_container">
+                    <div id="flipdown" class="flipdown"></div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        let timer_ = 1699639289//unix timestamp
+                        let flipdown = new FlipDown(timer_)
+                            .start()
+                            .ifEnded(() => {
+                                document.querySelector(".flipdown").innerHTML = `<h2>Timer is ended</h2>`;
+                            })
+                    })
+                </script>
+            
+            </div>
+        </div>
+
+
+        <div class="goals">
+            <div class="goals_title">
+                Hit your <br>
+                <div class="goal_center"><span id="big_goal">GOALS</span><img src="icons/Flag.svg" alt="flag"> <br></div>
+                in just <span id="steps">3 steps</span>
+            </div>
+        </div>
+
+        <div class="step_1">
+
+            <div class="top">1</div>
+            <div class="middle">Track food,<br>fitness & fasting</div>
+            <div class="bottom">Tracking calories and macros is easy with our barcode scanner and device integration.</div>
+            <img src="images/image_1.png" alt="step_1" id="img_1">
+
+        </div>
+
+        <div class="step_2">
+
+            <div class="top">2</div>
+            <div class="middle">Learn what works</div>
+            <div class="bottom">Personalized nutrition insights reveal what's working so you can make smarter choices.</div>
+            <img src="images/image_2.png" alt="step_2" id="img_2">
+
+        </div>
+
+        <div class="step_3">
+
+            <div class="top">3</div>
+            <div class="middle">Change your<br>habits and reach<br>your goals</div>
+            <div class="bottom">Now you have the tools and knowledge to build healthy habits for life.</div>
+            <img src="images/image_3.png" alt="step_3" id="img_3">
+
+        </div>
+
+
+        <div class="track">
+            <div class="text">
+                Track Your<br>
+                Weekly Progress
+            </div>
+            <div class="btn">
+                <a href="#"><button id="join">Join Now <img src="icons/explore.svg" alt="join"></button></a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+
+        <section>
+            <div class="footer_logo">Nutra</div>
+
+            <div class="footer_title">
+
+                <div class="title_one">
+                    <div class="primary">Products</div>
+                    <ul id="secondary">
+                        <li id="secondary_li">Foods</li>
+                        <li id="secondary_li">Exercise</li>
+                        <li id="secondary_li">Apps</li>
+                        <li id="secondary_li">Premium</li>
+                    </ul>
+                </div>
+                <div class="title_two">
+                    <div class="primary">Products</div>
+                    <ul id="secondary">
+                        <li id="secondary_li">Blog</li>
+                        <li id="secondary_li">Community</li>
+                        <li id="secondary_li">Contact Us</li>
+                        <li id="secondary_li">Support Center</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="title_three title_third" >
+                <div class="primary">Company</div>
+                <ul id="secondary">
+                    <li id="secondary_li">About Us</li>
+                    <li id="secondary_li">Careers</li>
+                    <li id="secondary_li">Press</li>
+                </ul>
+            </div>
+
+            <div class="title_center">
+                Find your healthy, and your happy.
+            </div>
+
+            <div class="join_footer">
+                Join Now <img src="icons/join_white.svg" alt="join">
+            </div>
+
+            <div class="copyright">
+                @ 2023 Reserved Vedansh Mevada
+            </div>
+
+        </section>
+
+    </footer>
+
+
+</body>
+</html>
