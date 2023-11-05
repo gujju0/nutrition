@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&family=Signika:wght@300;400;600&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --nunito:'Nunito', sans-serif;
+    --signika:'Signika', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --logo-weight:800; 
+    --poppins-regular:400;
+    --poppins-medium:500;
+    --poppins-semibold:600;
+    --poppins-bold:700;
+    --signika-light:300;
+    --signika-regular:400;
+    --signika-semibold:600;
+    --nunito-regular:400;
+    --nunito-semibold:600;
+    --nunito-bold:700;
+    --nunito-extrabold:800;
+    --black:#252525;
+    --grey:#f8f8f8;
+    --red:#EE2B47;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    background: #252525;
+}
+
+.logo
+{
+    font-family: var(--nunito);
+    font-weight: var(--nunito-extrabold);
+    font-size: 48px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--grey);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+button
+{
+    padding: 8px 30px;
+    margin-top: 10px;
+    color: var(--grey);
+    background: transparent;
+    border: 2px solid var(--grey);
+    border-radius: 8px;
+    font-family: var(--signika);
+    font-weight: var(--signika-regular);
+    font-size: 18px;
+}
+
+#go_btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
